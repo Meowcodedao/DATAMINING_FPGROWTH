@@ -42,7 +42,7 @@ Dataset chứa thông tin về **98,976 sinh viên y khoa** với các đặc đ
 | Cột | Mô tả | Giá trị |
 |-----|-------|---------|
 | Student ID | Mã sinh viên | Unique ID |
-| Age | Nhóm tuổi | Age_18_22, Age_23_27, Age_28_34, Age_35+ |
+| Age | Nhóm tuổi | Age_18_22, Age_23_27, Age_28_34 |
 | Gender | Giới tính | Male, Female |
 | Height | Nhóm chiều cao (cm) | Height_150_160, Height_160_170, Height_170_180, Height_180_190, Height_190_200 |
 | Weight | Nhóm cân nặng (kg) | Weight_40_50, Weight_50_60, Weight_60_70, Weight_70_80, Weight_80_90, Weight_90_100 |
