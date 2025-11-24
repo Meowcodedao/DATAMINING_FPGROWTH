@@ -330,14 +330,6 @@ SAMPLE_SIZE = None     # Đặt số (vd: 20000) để lấy mẫu, None = toàn
 
 ---
 
-## 👨‍💻 Tác giả
-
-Data Mining Project - UTC
-- **Repository**: DATAMINING_FPGROWTH
-- **Date**: November 2025
-
----
-
 ## 📄 License
 
 Educational project - UTC Data Mining Course
