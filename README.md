@@ -42,23 +42,26 @@ Dataset chứa thông tin về **98,976 sinh viên y khoa** với các đặc đ
 | Cột | Mô tả | Giá trị |
 |-----|-------|---------|
 | Student ID | Mã sinh viên | Unique ID |
-| Age | Nhóm tuổi | Age_18_22, Age_23_27, Age_28_34 |
-| Gender | Giới tính | Male, Female |
-| Height | Nhóm chiều cao (cm) | Height_150_160, Height_160_170, Height_170_180, Height_180_190, Height_190_200 |
-| Weight | Nhóm cân nặng (kg) | Weight_40_50, Weight_50_60, Weight_60_70, Weight_70_80, Weight_80_90, Weight_90_100 |
-| Blood Type | Nhóm máu | A, B, AB, O |
-| BMI | Chỉ số BMI | BMI_Underweight, BMI_Normal, BMI_Overweight, BMI_Obese |
-| Temperature | Nhiệt độ cơ thể | Temp_Low, Temp_Normal, Temp_High |
-| Heart Rate | Nhịp tim | HR_Low, HR_Normal, HR_High |
-| Blood Pressure | Huyết áp | BP_Low, BP_Normal, BP_High |
-| Cholesterol | Cholesterol | Chol_Normal, Chol_Borderline, Chol_High |
-| Diabetes | Tiểu đường | Yes, No |
-| Smoking | Hút thuốc | Yes, No |
+| Age | Nhóm tuổi | Age_18_22, Age_23_27, Age_28_34, Age_35+, Age_Unknown |
+| Gender | Giới tính | Male, Female, Gender_Unknown |
+| Height | Nhóm chiều cao (cm) | Height_150_160, Height_160_170, Height_170_180, Height_180_190, Height_190_200, Height_Unknown |
+| Weight | Nhóm cân nặng (kg) | Weight_40_50, Weight_50_60, Weight_60_70, Weight_70_80, Weight_80_90, Weight_90_100, Weight_Unknown |
+| Blood Type | Nhóm máu | A, B, AB, O, BloodType_Unknown |
+| BMI | Chỉ số BMI | BMI_Underweight, BMI_Normal, BMI_Overweight, BMI_Obese, BMI_Unknown |
+| Temperature | Nhiệt độ cơ thể | Temp_Low, Temp_Normal, Temp_High, Temp_Unknown |
+| Heart Rate | Nhịp tim | HR_Low, HR_Normal, HR_High, HR_Unknown |
+| Blood Pressure | Huyết áp | BP_Low, BP_Normal, BP_High, BP_Unknown |
+| Cholesterol | Cholesterol | Chol_Normal, Chol_Borderline, Chol_High, Chol_Unknown |
+| Diabetes | Tiểu đường | Yes, No, Diabetes_Unknown |
+| Smoking | Hút thuốc | Yes, No, Smoking_Unknown |
 
 **Đặc điểm dữ liệu:**
 - Dữ liệu đã được tiền xử lý và chuyển thành dạng categorical
 - Mỗi giá trị đã được gán nhãn rõ ràng (ví dụ: `Age_18_22`, `BMI_Normal`)
-- Không có giá trị missing
+- **Missing values**: Có ~11,819 giá trị Unknown (~0.92% tổng dữ liệu)
+  - Phân bố đều ở tất cả các cột (~1% mỗi cột)
+  - Được gán nhãn là `{Column}_Unknown` (ví dụ: `Gender_Unknown`, `Weight_Unknown`)
+  - FP-Growth xử lý Unknown như một category bình thường
 
 ---
 
